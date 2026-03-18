@@ -1,0 +1,57 @@
+/*
+ Theme Name: Academy V2
+ Theme URI: https://norbertacademy.com
+ Author: Ferdin Norbert
+ Author URI: https://norbertacademy.com
+ Description: Academy V2 is a simple and minimal WordPress theme designed for educational websites. It provides a clean and modern design, making it easy for educators and students to navigate and access course materials. With its responsive layout, Academy V2 ensures that your website looks great on all devices, from desktops to smartphones. Whether you're creating an online course platform or a school website, Academy V2 offers the perfect foundation for your educational content.  
+ Version: 1.0
+ License: GNU General Public License v2 or later
+ License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ Tags: simple, boilerplate, minimal
+ Text Domain: academy-v2
+*/
+
+body {
+  margin: auto;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-container a {
+  text-decoration: none;
+}
+
+.header-container li {
+  list-style-type: none;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 20px;
+}
+
+.na-sitewide-padding {
+  padding: 0 5rem;
+}
+
+@media screen and (min-width: 1831px) {
+  .na-sitewide-padding {
+    padding: 0 40rem;
+  }
+}
+
+@media (min-width: 1470px) and (max-width: 1830px) {
+  .na-sitewide-padding {
+    padding: 0 25rem;
+  }
+}
+
+@media (min-width: 1190px) and (max-width: 1469px) {
+  .na-sitewide-padding {
+    padding: 0 20rem;
+  }
+}
