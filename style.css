@@ -11,8 +11,16 @@
  Text Domain: academy-v2
 */
 
+* {
+  font-family: "Geist";
+}
+
 body {
   margin: auto;
+}
+
+h2.wp-block-heading {
+  font-size: 3rem;
 }
 
 .header-container {
