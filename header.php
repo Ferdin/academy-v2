@@ -23,6 +23,9 @@
                     <?php } 
                 ?>
             </div>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <i class="bi bi-list"></i>
+            </button>
             <nav class="main-nav">
                 <?php
                     wp_nav_menu( [

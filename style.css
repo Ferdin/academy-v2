@@ -63,3 +63,40 @@ h2.wp-block-heading {
     padding: 0 20rem;
   }
 }
+
+.menu-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: relative; /* or fixed if you prefer */
+    z-index: 1000;
+  }
+
+  .main-nav {
+    position: absolute;
+    top: 35px; /* adjust based on header height */
+    left: 0;
+    width: 100%;
+    background: white;
+    z-index: 999;
+    box-shadow: 0px 5px 10px grey;
+  }
+
+  .nav-menu {
+    display: none; /* hidden by default */
+    flex-direction: column; /* vertical menu */
+    padding: 20px;
+  }
+
+  .nav-menu.active {
+    display: flex; /* show when active */
+    padding: 0 5rem;
+  }
+}
