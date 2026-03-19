@@ -20,6 +20,31 @@ add_action( 'after_setup_theme', 'norbert_academy_theme_setup' );
 function norbert_academy_theme_enqueue_styles() {        
     // Custom fonts
     wp_enqueue_style( 'norbert_academy_theme_font_css', get_template_directory_uri() . '/fonts/fonts.css', array(), '2.0' );
+    wp_enqueue_style( 'norbert_academy_theme_custom_css', get_template_directory_uri() . '/styles/custom.css', array(), '2.0' );
 }
 
 add_action( 'wp_enqueue_scripts', 'norbert_academy_theme_enqueue_styles' );
+
+function norbert_academy_hero_section() {
+    ob_start();
+    ?>
+        <div class="na-hero-section">
+
+        </div>
+    <?
+    return ob_get_clean();
+}
+
+add_shortcode( "hero_section", "norbert_academy_hero_section" );
+
+function norbert_academy_enqueue_icons() {
+    // Bootstrap Icons CDN
+    wp_enqueue_style(
+        'bootstrap-icons',
+        'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css',
+        array(),
+        '1.11.3'
+    );
+}
+
+add_action('wp_enqueue_scripts', 'norbert_academy_enqueue_icons');
