@@ -67,6 +67,7 @@ registerBlockType("norbert-academy/hero", {
             { className: "na-hero-collage" },
             images.map((img) =>
               el("img", {
+                class: "na-hero-skill-image",
                 key: img.id,
                 src: img.url,
                 alt: img.alt || "",
@@ -75,6 +76,9 @@ registerBlockType("norbert-academy/hero", {
                   margin: "1%",
                   float: "left",
                   objectFit: "cover",
+                  position: "absolute",
+                  top: 60,
+                  left: 60,
                 },
               }),
             ),

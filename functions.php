@@ -50,6 +50,8 @@ function norbert_academy_enqueue_icons() {
 add_action('wp_enqueue_scripts', 'norbert_academy_enqueue_icons');
 
 function theme_scripts(){
+    // The core GSAP library
+    wp_enqueue_script( 'gsap-js', 'https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js', [], false, true );
     wp_enqueue_script( 'main-js', get_template_directory_uri() . '/js/main.js', array(), '1.0', true );
 }
 
