@@ -54,3 +54,23 @@ function theme_scripts(){
 }
 
 add_action( 'wp_enqueue_scripts', 'theme_scripts' );
+
+function norbert_academy_register_hero_block() {
+    wp_register_script(
+        'na-hero-block',
+        get_template_directory_uri() . '/blocks/hero-block.js',
+        [ 'wp-blocks', 'wp-element', 'wp-editor', 'wp-components' ],
+        filemtime( get_template_directory() . '/blocks/hero-block.js' )
+    );
+
+    register_block_type( 'norbert-academy/hero', [
+        'editor_script' => 'na-hero-block',
+    ] );
+}
+add_action( 'init', 'norbert_academy_register_hero_block' );
+
+function na_allow_svg_uploads($mimes) {
+    $mimes['svg'] = 'image/svg+xml';
+    return $mimes;
+}
+add_filter('upload_mimes', 'na_allow_svg_uploads');
