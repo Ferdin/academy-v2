@@ -50,6 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       // 4. exit
       .to(img, {
+        scale: 0.5,
         opacity: 0,
         duration: 1,
       })
