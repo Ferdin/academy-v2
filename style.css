@@ -104,5 +104,11 @@ h2.wp-block-heading {
 @media (max-width: 781px) {
   .wp-block-columns {
     flex-direction: column !important;
+    flex-wrap: wrap !important;
+  }
+
+  .wp-block-column {
+    flex-basis: 100% !important;
+    width: 100% !important;
   }
 }
