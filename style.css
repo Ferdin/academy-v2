@@ -112,3 +112,16 @@ h2.wp-block-heading {
     width: 100% !important;
   }
 }
+
+.na-p-text {
+  text-align: justify;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.na-heading-type1 {
+  color: white;
+  font-size: 24px;
+  background: #e71d36;
+  padding: 1rem;
+}
