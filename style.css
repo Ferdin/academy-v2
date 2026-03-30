@@ -50,11 +50,23 @@ h2.wp-block-heading {
   .na-sitewide-padding {
     padding: 0 30rem;
   }
+
+  .na-column-height {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+  }
 }
 
 @media (min-width: 1470px) and (max-width: 1830px) {
   .na-sitewide-padding {
     padding: 0 25rem;
+  }
+
+  .na-column-height {
+    height: 80vh;
+    display: flex;
+    align-items: center;
   }
 }
 
