@@ -15,6 +15,13 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
+  gsap.to(".na-text-border", {
+    "--angle": "360deg",
+    duration: 4,
+    repeat: -1,
+    ease: "none",
+  });
+
   const images = document.querySelectorAll(".na-hero-collage img");
 
   // Initial state

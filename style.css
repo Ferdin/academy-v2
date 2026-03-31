@@ -138,3 +138,26 @@ h2.wp-block-heading {
   padding: 1rem;
   box-shadow: 5px 5px 0px #000000;
 }
+
+li.na-p-text::marker {
+  content: "▶ ";
+  color: #e71d36;
+  font-size: 1rem;
+}
+
+/* li::before {
+  content: "▶";
+  color: #e71d36;
+  display: inline-block;
+  margin-right: 8px;
+  filter: drop-shadow(2px 2px 0px black);
+} */
+
+.na-text-border {
+  border-radius: 12px;
+  padding: 2rem;
+  border: 5px solid transparent;
+  background:
+    linear-gradient(white, white) padding-box,
+    linear-gradient(var(--angle), #743ad5, #d53a9d) border-box;
+}
